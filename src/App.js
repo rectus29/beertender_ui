@@ -1,21 +1,35 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import TopBar from './components/TopBar.js';
+import NavigationMenu from './components/NavigationMenu.js';
+import ProductGrid from './components/ProductGrid.js';
 import logo from './logo.svg';
 import './App.css';
 
+
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+
+    defaultData = null;
+
+    constructor(props) {
+        super(props);
+        this.defaultData = require('../../file.json');
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <TopBar />
+                <div className="container">
+                    <div className="col-md-2">
+                        <NavigationMenu />
+                    </div>
+                    <div className="col-md-10">
+                        <ProductGrid productList="{this.defaultData}"/>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;

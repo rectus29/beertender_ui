@@ -1,0 +1,84 @@
+{
+  "productList": {
+    "beer": {
+      "12*75": {
+        "choublonde": {
+          "name": "La Choulette Blonde",
+          "desc": "desc la Choulette Blonde",
+          "alcohol": 7.5,
+          "price": 30
+        },
+        "chounoel": {
+          "name": "La Choulette de Noël",
+          "desc": "desc la Choulette de noël",
+          "alcohol": 7,
+          "price": 30
+        },
+        "chouambree": {
+          "name": "La Choulette Ambrée",
+          "desc": "desc la Choulette ambree",
+          "alcohol": 8,
+          "price": 30
+        },
+        "choubrune": {
+          "name": "La Choulette Brune",
+          "desc": "desc la Choulette Brune",
+          "alcohol": 7.5,
+          "price": 30
+        }
+      },
+      "24*33": {
+        "choublonde": {
+          "name": "La Choulette Blonde",
+          "desc": "desc la Choulette Blonde",
+          "alcohol": 7.5,
+          "price": 40
+        },
+        "chounoel": {
+          "name": "La Choulette de Noël",
+          "desc": "desc la Choulette de noël",
+          "alcohol": 7,
+          "price": 40
+        },
+        "chouambree": {
+          "name": "La Choulette Ambrée",
+          "desc": "desc la Choulette ambree",
+          "alcohol": 8,
+          "price": 40
+        },
+        "choubrune": {
+          "name": "La Choulette Brune",
+          "desc": "desc la Choulette Brune",
+          "alcohol": 7.5,
+          "price": 40
+        }
+      },
+      "12*33": {
+        "choublonde": {
+          "name": "La Choulette Blonde",
+          "desc": "desc la Choulette Blonde",
+          "alcohol": 7.5,
+          "price": 20
+        },
+        "chounoel": {
+          "name": "La Choulette de Noël",
+          "desc": "desc la Choulette de noël",
+          "alcohol": 7,
+          "price": 20
+        },
+        "chouambree": {
+          "name": "La Choulette Ambrée",
+          "desc": "desc la Choulette ambree",
+          "alcohol": 8,
+          "price": 22
+        },
+        "choubrune": {
+          "name": "La Choulette Brune",
+          "desc": "desc la Choulette Brune",
+          "alcohol": 7.5,
+          "price": 35.75
+        }
+      }
+    }
+  }
+}
