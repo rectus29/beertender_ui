@@ -10,9 +10,11 @@ export default class NavigationMenu extends React.Component {
 
     render() {
         return (
-            <div id="navigationManu" class="col-md-2">
-                navigationMenu
-            </div>
+            <nav className="nav nav-pills flex-column">
+                    <a className="nav-link active" href="yolo">Bouteille 75cl</a>
+                    <a className="nav-link" href="yala">Bouteille 33cl</a>
+                    <a className="nav-link" href="#">Bouteille 75cl</a>
+            </nav>
         );
     }
 }

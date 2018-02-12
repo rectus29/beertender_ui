@@ -1,37 +1,48 @@
 /**
  * Created by a.bernard on 25/01/2018.
  */
-import React, { Component } from 'react';
-import ProductLine from './ProductLine';
+import React from 'react';
+import Currency from 'react-currency-formatter';
 
 
 export default class ProductGrid extends React.Component {
 
 
-
-
-    _renderProductLines(props){
-        var productList = props.productList;
-        if(productList.length < 1){
-
-        }
+    constructor(props) {
+        super(props);
+        console.log(this.props.products);
     }
-
-
-    render() {
-        var datas = [];
-        datas[0] =  {id:0, data : "data 0"};
-        datas[1] =  {id:1, data : "data 1"};
-        datas[2] =  {id:2, data : "data 2"};
-
-        const listItems = datas.map((data) =>
-            <li>{data.data}</li>
-        );
-
+    
+    render() {          
         return (
             <div id="productGrid" >
-                <_renderProductLines />
+                <table className="table table-striped">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {this.props.products.map((object, i) => this.renderBeerRow(object))}
+                    </tbody>
+                </table>                
             </div>
+        );
+    }
+    
+    renderBeerRow(product){
+        return (
+            <tr key={product.code} className="ProductRow">
+                <td>{product.img}</td>
+                <td>{product.name}</td>
+                <td>
+                    <Currency currency="EUR" quantity={product.price} />
+                </td>
+                <td>action</td>
+            </tr>
         );
     }
 }

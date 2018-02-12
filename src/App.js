@@ -4,27 +4,31 @@ import NavigationMenu from './components/NavigationMenu.js';
 import ProductGrid from './components/ProductGrid.js';
 import logo from './logo.svg';
 import './App.css';
+import dataTemplate from './data_template.json';
+
 
 
 class App extends Component {
 
-    defaultData = null;
-
     constructor(props) {
         super(props);
-        this.defaultData = require('../../file.json');
+        this.state = {
+            defaultData : dataTemplate
+        };
     }
 
     render() {
         return (
             <div className="App">
-                <TopBar />
+                <TopBar/>
                 <div className="container">
-                    <div className="col-md-2">
-                        <NavigationMenu />
-                    </div>
-                    <div className="col-md-10">
-                        <ProductGrid productList="{this.defaultData}"/>
+                    <div className="row">
+                        <div className="col-md-3">
+                            <NavigationMenu/>
+                        </div>
+                        <div className="col-md-9">
+                            <ProductGrid products={this.state.defaultData}/>
+                        </div>
                     </div>
                 </div>
             </div>
