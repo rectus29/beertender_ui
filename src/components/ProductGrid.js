@@ -41,7 +41,10 @@ export default class ProductGrid extends React.Component {
                 <td>
                     <Currency currency="EUR" quantity={product.price} />
                 </td>
-                <td>action</td>
+                <td>
+                    <a href=""><i className="fas fa-cart-arrow-down"></i></a>
+                    <a href=""><i className="fas fa-trash"></i></a>
+                </td>
             </tr>
         );
     }
