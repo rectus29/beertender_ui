@@ -18,8 +18,8 @@ export default class TopBar extends React.Component {
                         </div>
                         <div className="col-md-4">
                             <div id="userBlock">
-                                <span class="badge badge-light">0</span>&nbsp;<i className="fas fa-shopping-cart"></i>&nbsp;|&nbsp;
-                                <i className="fas fa-user"></i> User Login | <a href="#">logout</a>
+                                <span className="badge badge-light">0</span>&nbsp;<i className="fas fa-shopping-cart"></i>&nbsp;|&nbsp;
+                                <i className="fas fa-user"></i> User Login | <a href="#">Logout</a>
                             </div>
                         </div>
                     </div>

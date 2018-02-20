@@ -5,15 +5,16 @@
  * Created by a.bernard on 25/01/2018.
  */
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 export default class NavigationMenu extends React.Component {
 
     render() {
         return (
             <nav className="nav nav-pills flex-column">
-                    <a className="nav-link active" href="yolo">Bouteille 75cl</a>
-                    <a className="nav-link" href="yala">Bouteille 33cl</a>
-                    <a className="nav-link" href="#">Bouteille 75cl</a>
+                <NavLink className="nav-link" activeClassName="active" to="/75cl">Bouteille 75cl</NavLink>
+                <NavLink className="nav-link" activeClassName="active" to="/33cl">Bouteille 33cl</NavLink>
+                <NavLink className="nav-link" activeClassName="active" to="/25cl">Bouteille 25cl</NavLink>
             </nav>
         );
     }

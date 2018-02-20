@@ -5,7 +5,7 @@ import React from 'react';
 import Currency from 'react-currency-formatter';
 
 
-export default class ProductGrid extends React.Component {
+export default class CartView extends React.Component {
 
 
     constructor(props) {
