@@ -18,16 +18,16 @@ export default class Main extends React.Component {
                     <div className="col-md-9">
                         <Switch>
                             <Route exact path='/' render={(props) => (
-                                <ProductGrid products={this.props.defaultData}/>
+                                <div></div>
                             )}/>
                             <Route path='/75cl'  render={(props) => (
-                                <ProductGrid products={this.props.defaultData}/>
+                                <ProductGrid products={this.props.defaultData["75cl"]}/>
                             )}/>
                             <Route path='/33cl'  render={(props) => (
-                                <ProductGrid products={this.props.defaultData}/>
+                                <ProductGrid products={this.props.defaultData["33cl"]}/>
                             )}/>
-                            <Route path='/25cl'  render={(props) => (
-                                <ProductGrid products={this.props.defaultData}/>
+                            <Route path='/fut'  render={(props) => (
+                                <ProductGrid products={this.props.defaultData["fut"]}/>
                             )}/>
                         </Switch>
 
