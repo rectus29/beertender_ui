@@ -97,38 +97,6 @@
       "alcohol": 7.5,
       "nb": 24,
       "price": 40
-    },
-    {
-      "code": "CHOUL12FAMB",
-      "name": "La Choulette Framboise",
-      "desc": "desc la Choulette Blonde",
-      "alcohol": 6,
-      "nb": 12,
-      "price": 18
-    },
-    {
-      "code": "CHOULBLD2",
-      "name": "La Choulette Pêche",
-      "desc": "desc la Choulette Blonde",
-      "alcohol": 5,
-      "nb": 12,
-      "price": 18
-    },
-    {
-      "code": "CHOULBLD2",
-      "name": "La Choulette Fraise",
-      "desc": "desc la Choulette Blonde",
-      "alcohol": 5,
-      "nb": 12,
-      "price": 18
-    },
-    {
-      "code": "CHOULBLD2",
-      "name": "La Choulette Cerise",
-      "desc": "desc la Choulette Blonde",
-      "alcohol": 5,
-      "nb": 12,
-      "price": 18
     }
   ],
   "fut": [

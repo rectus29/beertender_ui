@@ -20,6 +20,7 @@ export default class ProductGrid extends React.Component {
                     <tr>
                         <th></th>
                         <th>Name</th>
+                        <th>Nb</th>
                         <th>Price</th>
                         <th>Action</th>
                     </tr>
@@ -37,6 +38,7 @@ export default class ProductGrid extends React.Component {
             <tr key={product.code} className="ProductRow">
                 <td>{product.img}</td>
                 <td>{product.name}</td>
+                <td>{product.nb}</td>
                 <td>
                     <Currency currency="EUR" quantity={product.price} />
                 </td>
