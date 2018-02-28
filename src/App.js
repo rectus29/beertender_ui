@@ -3,6 +3,9 @@ import TopBar from './components/TopBar.js';
 import Main from './components/Main.js';
 import './App.css';
 import dataTemplate from './data_template.json';
+import {Route} from "react-router-dom";
+import SignInForm from "./components/security/SignInForm";
+import PrivateRoute from "./components/security/SignInForm";
 
 
 
@@ -19,9 +22,15 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
-                <TopBar />
-                <Main defaultData={this.state.defaultData}/>
+            <div className="App container">
+                <PrivateRoute path='/' >
+                    <TopBar />
+                    <Main defaultData={this.state.defaultData}/>
+                </PrivateRoute>
+                <Route path='/login'  render={(props) => (
+                    <SignInForm />
+                )}/>
+
             </div>
         );
     }
