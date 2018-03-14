@@ -2,7 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 https://tylermcginnis.com/react-router-protected-routes-authentication/
 https://reacttraining.com/react-router/web/example/auth-workflow
-
+https://marmelab.com/admin-on-rest/Authentication.html
+http://www.material-ui.com/#/components/badge
+https://react-bootstrap.github.io/getting-started/introduction/
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
